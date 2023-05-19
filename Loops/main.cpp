@@ -117,5 +117,31 @@ int main() {
         > How to write for loops with a counter that increments or decrements.
     */
     
-    /
+    // Fizz Buzz Project
+    
+    /*
+    - Fizz Buzz is a classic developer interview question that is asked or referred to so often for so long, it is almost a cliché!
+    - Though this challenge will appear very simplistic to those with some coding experience, it is designed to weed out 99.5% programming job candidates who cannot creatively use their coding knowledge to solve simple problems.
+    - Want to give it a shot? Write a fizzbuzz.cpp program that outputs numbers from 1 to 100.
+    - But for multiples of 3, print Fizz instead of the number and for the multiples of 5, print Buzz. For numbers which are multiples of both 3 and 5 print, FizzBuzz.
+     */
+    
+    // 1. As the inventor of this challenge, Imran Ghory, states: "After a fair bit of trial and error I’ve come to discover that people who struggle to code don’t just struggle on big problems, or even smallish problems (i.e. write an implementation of a linked list). They struggle with tiny problems. So I set out to develop questions that can identify this kind of developer and came up with a class of questions I call “FizzBuzz Questions” named after a game children often play (or are made to play) in schools in the UK.”
+    // 2. Let’s create a skeleton for the program. Add: int main() { // Brain explodes here: }
+    // 3. How do we output all the numbers from 1 to 100? Well, we could write std::cout 100 times back to back but that’s no fun. What else can we do? That’s right! A for loop! Write a for loop that starts at 1 and iterates to 100.
+    // 4. Inside the for loop, let’s output the counter i.
+    // 5. And now we have all the numbers. Let’s solve the hard part. Before coding further, take out a piece of paper and brainstorm. How do we check for whether or not a number is divisible by 3? Hint: You will need a if/else if/else statement for this and also the modulo % operator! When you are ready, try to implement it.
+    
+    for(int i = 1; i <= 100; i++) {
+        if(i % 3 == 0 && i % 5 == 0) {
+            std::cout << "FizzBuzz\n";
+        } else if(i % 3 == 0) {
+            std::cout << "Fizz\n";
+        } else if(i % 5 == 0) {
+            std::cout << "Buzz\n";
+        } else {
+            std::cout << i << "\n";
+        }
+    }
+ 
 }
