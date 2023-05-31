@@ -286,4 +286,84 @@ int main() {
     } else {
         std::cout << "Hi.\n";
     }
+    
+    //Text Adventure Project
+    
+    /*
+    - This project is slightly different than others you have encountered thus far on Codecademy. Instead of a step-by-step tutorial, this project contains a series of open-ended requirements which describe the project you’ll be building. There are many possible ways to correctly fulfill all of these requirements, and you should expect to use the internet, Codecademy, and other resources when you encounter a problem that you cannot easily solve.
+    - Create a C++ text adventure with the storyline of your choosing. The program should use your knowledge of C++ conditionals, logic, and loops.
+    - If you choose to do this project on your computer instead of Codecademy, you can download what you’ll need by clicking the “Download” button below. If you need help setting up your computer, be sure to check out our setup guide.
+    */
+    
+    // 1. In order to complete this project, you should be familiar with C++ conditionals and control flow, loops, and setting variables using user input. Ideally, you’ve finished the first four sections of Learn C++ (through Loops).
+    // 2. Your program should have a storyline with: a beginning, at least three possible endings. It can help to map out your ideas on paper and draw out your possible branches before you begin coding anything. In our solution, we used Alice’s Adventures in Wonderland as the premise for our storyline, but you can choose any topic you like! Some possible ideas include: A fantasy book you love, Your favorite TV show, A funny movie, A murder mystery, A game show
+    // 3. Your program should contain at least three branch points where the user must make a choice about what to do next. At each branch point, the program should: give the user at least two choices, accept user input. Note that not every story branch needs its own ending; it can also add something and then reconnect with another storyline.
+    // 4. Your program should incorporate at least one kind of loop. Loops come in handy in a couple scenarios: to validate user input (e.g., check if the user entered something other than your listed choices and then list the choices again), to give the user multiple chances to choose a specific outcome (e.g., give a user three chances to pick an option that won’t get them killed), to continue the adventure until the user makes a particular choice. Note: On Codecademy’s platform, if you plan to obtain user input within a loop, we recommend sticking with a for loop. Due to the way our platform is set up, a while loop that includes user input will trigger an infinite loop.
+    // 5. Your program should handle user choices using conditional logic. We encourage you to use if/else if statements and switch statements where you see fit. Note: If your user has reached an ending, you can use return 0; to exit the main() function and end the program.
+    
+    char ch1, q2, q3;
+
+    // Question 1
+    std::cout << "Welcome to My Program. \n";
+    std::cout << "Everyday we wake up in a particular mood that leads our day for the most part. \n";
+    std::cout << "Which mood are you waking up to? \n \n";
+    std::cout << "A.) Angry \n";
+    std::cout << "B.) Blah \n";
+    std::cout << "C.) Happy \n";
+    std::cin >> ch1;
+
+    if(ch1 == 'a' || ch1 == 'A') {
+        std::cout << "We are off to a bad start, Everyone    sucks. \n\n";
+        std::cout << "What are you going to do next to change your day? \n";
+        std::cout << "A.) GO GET COFFEE!! \n";
+        std::cout << "B.) Just Go to Work \n";
+        std::cout << "C.) Go Back To Sleep \n";
+        std::cin >> q2;
+
+           
+           // Q2 question
+           if (q2 == 'a' || q2 == 'A') {
+               std::cout << "Things Look Better, You might survive";
+           } else if (q2 == 'b' || q2 == 'B') {
+               std::cout << "You're a Ticking Time Bomb!";
+           } else if ( q2 == 'c' || q2 == 'C') {
+               std::cout << "Nothing can beat sleep!!" ;
+           } else {
+               std::cout <<"Error, Not A Choice" ;
+           }
+
+
+    }
+
+    if(ch1 == 'b' || ch1 == 'B') {
+        
+           std::cout << "Nothing seems to motivate you and all you want to do is lay in bed. \n";
+           std::cout << "What are you going to do next to change your day? \n";
+           std::cout << "A.) GO GET COFFEE!! \n";
+           std::cout << "B.) Ditch work to go to the beach! \n";
+           std::cout << "C.) Go Back To Sleep \n";
+           std::cin >> q3;
+
+           //Question 3
+           if (q3 == 'a' || q3 == 'A') {
+               std::cout << "Things Look Better, You might survive";
+           } else if (q3 == 'b' || q3 == 'B') {
+               std::cout << "You're day Just got Better! Enjoy!" ;
+           } else if ( q3 == 'c' || q3 == 'C') {
+               std::cout << "Nothing can beat sleep!!";
+           } else {
+               std::cout <<"Error, Not A Choice ----";
+           }
+    }
+
+    if(ch1 == 'c' || ch1 == 'C') {
+           std::cout << "Nothing Can Ruin Your Day!! \n";
+           std::cout << "ENJOY!! \n";
+    }
+    
+    for(int d = 0; d <= 10; d++) {
+      std::cout << "THANK YOU \n";
+    }
+    
+    
 }
